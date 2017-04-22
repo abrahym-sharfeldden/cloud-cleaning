@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> <!-- Prevents random characters from appearing, ie Â in Safari -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Needed for media queries -->
+	
+	<title>iCloud Cleaning Service</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/style.min.css">
+	<link rel="stylesheet" href="CSS/jquery-ui.min.css">
+	
+	<script src="JS/jquery-3.1.1.min.js"></script>
+  	<script src="JS/jquery-ui.min.js"></script>
+	<script src="JS/script.min.js"></script>
+</head>
+<body>
+	<div class="header" id="header">
+		<div class="header-container">
+			<div class="comp-logo inline-block">
+				<div class="logo-container image-container">
+					<img src="IMG/logo.png" alt="iCloud Cleaning Service logo">
+				</div>
+			</div>
+			<div class="nav-container inline-block">
+				<nav class="cbp-hrmenu" id="cbp-hrmenu">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#clean">Cleaning</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div style="clear:both;"></div> <!-- Needed to allow standard content flow from the above floated elements -->
+		</div>
+	</div>
+	<div class="container">
+		<div class="home-container content" id="home">
+			<div class="welcome-container">
+				<div class="welcome-image">
+					<img src="IMG/nyc.jpg" />
+					<div class="text">
+						<h1 id="fadeIn"><stronger>iCloud Cleaning Service</stronger></h1>
+						<noscript><h1><strong>iCloud Cleaning Service</strong></h1></noscript>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cleaning-container content" id="clean">
+			<hr>
+		 	
+		 	<div class="cleaning-left home-cleaning cleaning">
+		 		<div class="left-container cleaning-content">
+		 			<div class="image-container cleaning-image-container">
+		 				<img src="IMG/home.jpg" alt="Home Cleaning Image">
+		 			</div>
+		 			<div class="home-cleaning-content">
+		 				<h2>Home Cleaning</h2>
+
+		 				<p>We offer a variety of home cleaning services while working around your schedule to provide the best quality of service</p>
+
+						<ul class="tabs-a">
+							<li class="tab-link current1" data-tab="tab-a1">Bedroom and Living Room</li>
+							<li class="tab-link" data-tab="tab-a2">Bathroom and Kitchen</li>
+							<li class="tab-link" data-tab="tab-a3">Extra Services</li>
+						</ul>
+
+						<div id="tab-a1" class="tab-content current1">
+							<ul>
+								<li>Make the bed/change linens</li>
+								<li>Wipe down mirrors and exterior cabinets</li>
+								<li>Clean under furniture</li>
+								<li>Dust and wipe blinds and window ledges</li>
+								<li>Empty all trash</li>
+							</ul>
+						</div>
+						<div id="tab-a2" class="tab-content">
+							<ul>
+								<li>Clean and put away dishes</li>
+								<li>Disinfect sinks, toilets and bathtubs</li>
+								<li>Clean ovens and refrigerators</li>
+								<li>Mop all types of floors including dry wood floors</li>
+								<li>Wipe down mirrors</li>
+							</ul>
+						</div>
+						<div id="tab-a3" class="tab-content">
+							<p>For more thorough cleaning, please consider our additional cleaning services. Many of our add-ons take approximately half an hour to an hour to complete. Extra fees will be added for the following services</p>
+							<ul>
+								<li>Inside cabinet</li>
+								<li>Inside fridge</li>
+								<li>Inside oven</li>
+								<li>Laundry wash and dry</li>
+							</ul>
+						</div>
+					</div>
+		 		</div>
+		 	</div>
+		 	<div class="cleaning-right business-cleaning cleaning">
+		 		<div class="right-container cleaning-content">
+		 			<div class="image-container cleaning-image-container">
+		 				<img src="IMG/office.jpg" alt="Home Cleaning Image">
+		 			</div>
+		 			<div class="business-cleaning-content">
+		 				<h2>Business Cleaning</h2>
+
+		 				<p>We clean offices, rooms, hallways, lobbies, restrooms, elevators, and all other work areas.</p>
+		 				<ul class="tabs-b">
+							<li class="tab-link current2" data-tab="tab-b1">Conference Room and Lobby</li>
+							<li class="tab-link" data-tab="tab-b2">Kitchen</li>
+							<li class="tab-link" data-tab="tab-b3">Furniture</li>
+						</ul>
+
+						<div id="tab-b1" class="tab-content current2">
+							<ul>
+								<li>Wipe down tables and chairs</li>
+								<li>Removing dirt from carpets using high-powered vaccuums</li>
+								<li>Removing garbage and debris</li>
+							</ul>
+						</div>
+						<div id="tab-b2" class="tab-content">
+							<ul>
+								<li>Wash dishes</li>
+								<li>Clean countertops</li>
+								<li>Clean stoves</li>
+							</ul>
+						</div>
+						<div id="tab-b3" class="tab-content">
+							<ul>
+								<li>Polished furniture</li>
+								<li>Dusting window sills and desk</li>
+								<li>Proper removal of dust and careful treatment to blinds and miniblinds</li>
+							</ul>
+						</div>
+		 			</div>
+		 		</div>
+		 	</div>
+		 	<div style="clear:both;"></div> <!-- Needed to allow standard content flow from the above floated elements -->
+		</div>
+		<div class="contact-container content" id="contact">
+			<hr>
+			<div class="contact-form">
+				<h1 style="text-align:center;">Contact Us:</h1>
+				<form id="form" class="topBefore">
+					<input id="name" type="text" placeholder="NAME">
+					<input id="email" type="text" placeholder="E-MAIL">
+					<textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+  
+  					<button id="submit" type="submit">Submit!</button>
+				</form>
+			</div>
+			<div class="contact-info">
+				<div class="hours-of-operation">
+			 		<div class="operations-container">
+			 			<h1>Hours of Operation:</h1>
+
+			 			<h3>Office Hours:</h3>
+
+		 				<ul style="padding-left:none;">
+		 					<li style="list-style-type:none;">Monday-Friday: 9am to 5pm</li>
+		 				</ul>
+
+		 				<p>Cleaning Services are offered seven (7) days a week.</p>
+			 		</div>
+		 		</div>
+			</div>
+			<div style="clear:both;"></div><!-- Needed to allow standard content flow from the above floated elements -->
+		</div>
+	</div>
+	<div class="footer">
+		<footer class="footer-distributed">
+
+				<div class="footer-left">
+
+					<h3>i<span>Cloud </span>Cleaning Service</h3>
+
+					<p class="footer-links">
+						<a href="#home">Home</a>
+						·
+						<a href="#clean">Our Services</a>
+						·
+						<a href="#contact">Contact Us</a>
+					</p>
+
+					<p class="footer-company-name">iCloud Cleaning Service <!-- &copy; 2015 --></p>
+				</div>
+
+				<div class="footer-center">
+
+					<div>
+						<i class="fa fa-map-marker"></i>
+						<p><span>123 Clean Street</span> New York, New York</p>
+					</div>
+
+					<div>
+						<i class="fa fa-phone"></i>
+						<p>+1 (718)-123-456</p>
+					</div>
+
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="info@icloudcleaning.com">info@icloudcleaning.com</a></p>
+					</div>
+
+				</div>
+
+				<div class="footer-right">
+
+					<p class="footer-company-about">
+						<span>About the company</span>
+						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+					</p>
+
+					<div class="footer-icons">
+
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-github"></i></a>
+
+					</div>
+
+				</div>
+
+			</footer>
+	</div>
+</body>
+</html>
